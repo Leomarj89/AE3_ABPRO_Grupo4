@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECOEXPRESS</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Estilos embebidos -->
+  <style>
+    .titulo-principal {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #4caf50, #81c784);
+      color: white;
+    }
+
+    .materiales {
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    .materiales ul {
+      padding-left: 20px;
+    }
+
+    #footer {
+      font-size: 0.8em;
+      text-align: center;
+      margin-top: 40px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="titulo-principal">Bienvenido a ECOEXPRESS</h1>
+
+  <section class="materiales">
+    <h2>Materiales Aceptados</h2>
+    <ul>
+      <li>Cartón: $10 por kg</li>
+      <li>Vidrio: $8 por kg</li>
+      <li>Plástico: $12 por kg</li>
+      <li>Electrónicos: $20 por unidad</li>
+    </ul>
+  </section>
+
+  <section class="formulario-box">
+    <h2>Agendar Retiro</h2>
+    <form class="formulario">
+      <label for="nombre">Nombre</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" style="width: 100%;"><br><br>
+
+      <label for="direccion">Dirección</label><br>
+      <input type="text" id="direccion" name="direccion" placeholder="Tu dirección"><br><br>
+
+      <label for="material">Material</label><br>
+      <select id="material" name="material">
+        <option value="carton">Cartón</option>
+        <option value="vidrio">Vidrio</option>
+        <option value="plastico">Plástico</option>
+        <option value="electronicos">Electrónicos</option>
+      </select><br><br>
+
+      <button type="submit" class="btn-agendar">Agendar</button>
+    </form>
+  </section>
+
+  <footer id="footer">
+    © 2025 ECOEXPRESS. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
